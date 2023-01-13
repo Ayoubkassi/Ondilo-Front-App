@@ -1,6 +1,7 @@
 import Navbar from './components/navbar/navbar.component';
 import { Main } from './components/navbar/navbar.styles';
-import { Container , NavContainer , MainContainer } from './styles/SchedulePage.styles'
+import { Container , NavContainer , MainContainer } from './styles/SchedulePage.styles';
+import Header from './components/header/header.component';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
 
 
         <MainContainer>
-
+            <Header />
         </MainContainer>
       </Container>
     </>

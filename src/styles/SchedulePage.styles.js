@@ -7,15 +7,15 @@ export const Container = styled.div`
 `
 
 export const NavContainer = styled.div`
-    flex-basis = 17%;
-    width : 17%;
+    flex-basis = 18%;
+    width : 18%;
     background-color : black;
     display : flex;
     justify-content : center;    
 `
 
 export const MainContainer = styled.div`
-    flex-basis = 83%;
-    width : 83%;
-    background-color : red;
+    flex-basis = 84%;
+    width : 84%;
+    padding : 50px ;
 `

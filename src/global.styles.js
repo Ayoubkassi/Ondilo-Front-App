@@ -13,7 +13,7 @@ export const GlobalStyles = createGlobalStyle`
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
    font-size: 16px;
-   color : white;
+   color : black;
     }
 `;
 

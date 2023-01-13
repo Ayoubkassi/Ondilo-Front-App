@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import profileImg from '../../assets/profile2.webp';
 
 
-export const Container = styled.div`
+export const HeaderContainer = styled.div`
     display : flex;
     justify-content : space-between;
 `

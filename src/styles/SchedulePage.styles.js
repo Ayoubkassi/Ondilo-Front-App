@@ -19,3 +19,9 @@ export const MainContainer = styled.div`
     width : 84%;
     padding : 50px ;
 `
+
+export const Flex = styled.div`
+    display : flex;
+    justify-content : space-between;
+    margin-top : 30px;
+`

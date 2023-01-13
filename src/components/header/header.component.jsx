@@ -1,4 +1,4 @@
-import { Container , Left , Right , Title , Date , Double , HeaderImage } from "./header.styles";
+import { HeaderContainer , Left , Right , Title , Date , Double , HeaderImage } from "./header.styles";
 import { GrCaretDown } from 'react-icons/gr';
 import { useState } from 'react';
 import {
@@ -36,7 +36,7 @@ const Header = () => {
 
 
     return (
-        <Container>
+        <HeaderContainer>
             <Left>
                 <Title>Schedule</Title>
                 <Double>
@@ -70,7 +70,7 @@ const Header = () => {
                 </FormControl>
                 <HeaderImage />
             </Right>
-        </Container>
+        </HeaderContainer>
     )
 }
 

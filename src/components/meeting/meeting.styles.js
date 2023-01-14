@@ -38,5 +38,5 @@ export const MeetingContainer = styled.div`
     margin-top : 15px;
     display : flex;
     justify-content : space-between;
-    padding : 15px 28px;
+    padding : 15px 22px;
 `

@@ -25,3 +25,14 @@ export const Flex = styled.div`
     justify-content : space-between;
     margin-top : 30px;
 `
+
+export const Left = styled.div`
+    flex-basis : 45%;
+    width : 45%;
+    
+`
+
+export const Right = styled.div`
+    flex-basis : 45%;
+    width : 45%;
+`

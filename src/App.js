@@ -6,6 +6,7 @@ import Schedule from './components/schedule/schedule.component';
 import {  Left , Right } from './styles/SchedulePage.styles'
 import Meeting from './components/meeting/meeting.component';
 import ProjectProgress from './components/project-progress/project-progress.component';
+import Files from './components/files/files.component';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
               </Left>
               <Right>
                   <Meeting />
+                  <Files />
               </Right>
             </Flex>
         </MainContainer>

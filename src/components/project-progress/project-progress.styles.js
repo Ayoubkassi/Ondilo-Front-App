@@ -42,6 +42,7 @@ export const Left = styled.div`
     left : 0;
 `
 
+
 export const Right = styled.div`
     position : absolute ;
     right : 25px;

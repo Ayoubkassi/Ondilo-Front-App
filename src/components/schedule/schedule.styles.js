@@ -9,7 +9,7 @@ export const Bar = styled.div`
 `
 
 export const Link = styled.a`
-    color : #c8ccc9;
+    color : #dad9da;
     font-weight : 600;
 `
 

@@ -1,17 +1,21 @@
 import { Container , Section , Images , ImageContainer , Column , Date , Title , HeaderImg} from "./schedule-item.styles";
 import { FaPaintBrush } from 'react-icons/fa';
+import { useState } from 'react';
 import pers1 from '../../assets/pers1.jpg';
 import pers2 from '../../assets/pers2.jpg';
 import pers3 from '../../assets/pers3.jpg';
 
 
 
-const ScheduleItem = ({ logo, title, date , images }) => {
+const ScheduleItem = ({ logo, title, date , images , backColor }) => {
+
+    
+
 
     return(
-        <Container>
+        <Container color={backColor}>
             <Section>
-                <ImageContainer>
+                <ImageContainer color={backColor}>
                     <FaPaintBrush color = "black"/>
                 </ImageContainer>
                 <Column>

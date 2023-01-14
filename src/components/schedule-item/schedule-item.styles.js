@@ -11,10 +11,11 @@ export const Container = styled.div`
     padding : 0px 20px;
     height : 95px;
     align-items : center;
-    background-color : black;
-    color : white;
-    border-radius : 7px;
+    background-color : ${({ color }) => color == "black" ? "black" : "white" };
+    color : ${({ color }) => color == "black" ? "white" : "black" };
+    border-radius : 10px;
     margin-bottom : 15px;
+    box-shadow: 5px 5px 5px #ddd;
 `
 
 export const Section= styled.div`
@@ -24,7 +25,7 @@ export const Section= styled.div`
 `
 
 export const ImageContainer = styled.div`
-    background-color : white;
+    background-color : ${({ color }) => color == "black" ? "white" : "#ffe7df" };
     height : 50px;
     width : 50px;
     border-radius : 7px;
@@ -46,11 +47,10 @@ export const HeaderImg = styled.img`
 `
 
 export const Title = styled.h4`
-    color : white;
 `
 
 export const Date = styled.p`
-    color : #9da19e;
+    color : #414141;
 `
 
 export const Column = styled.div`

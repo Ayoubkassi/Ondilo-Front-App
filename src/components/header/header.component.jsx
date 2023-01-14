@@ -15,7 +15,7 @@ import {
     return createStyles({
       search: {
         margin: "0",
-        backgroundColor : " #f0f1f2",
+        backgroundColor : " #f7f7f7",
         width : "70%"
       }
     });

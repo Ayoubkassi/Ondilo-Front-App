@@ -4,6 +4,7 @@ import { Container , NavContainer , MainContainer , Flex } from './styles/Schedu
 import Header from './components/header/header.component';
 import Schedule from './components/schedule/schedule.component';
 import {  Left , Right } from './components/header/header.styles';
+import Meeting from './components/meeting/meeting.component';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
                   <Schedule />
               </Left>
               <Right>
-                  
+                  <Meeting />
               </Right>
             </Flex>
         </MainContainer>

@@ -1,7 +1,12 @@
 import { Bar , Link , ClickedLink , Column} from "./schedule.styles";
 import ScheduleItem from "../schedule-item/schedule-item.component";
+import { useState } from 'react';
+
 
 const Schedule = () => {
+
+    const [color ,setColor] = useState("black");
+
     return(
         <Column>
             <Bar>
@@ -10,7 +15,7 @@ const Schedule = () => {
                 <Link>In Review</Link>
                 <Link>Completed</Link>
             </Bar>
-            <ScheduleItem />
+            <ScheduleItem backColor={color} />
             <ScheduleItem />
             <ScheduleItem />
         </Column>

@@ -9,13 +9,14 @@ export const Container = styled.div`
     justify-content : space-between;
     width : 100%;
     padding : 0px 20px;
-    height : 95px;
+    height : 105px;
     align-items : center;
-    background-color : ${({ color }) => color == "black" ? "black" : "white" };
-    color : ${({ color }) => color == "black" ? "white" : "black" };
+    background-color : ${({ color }) => color === "black" ? "black" : "white" };
+    color : ${({ color }) => color === "black" ? "white" : "black" };
     border-radius : 10px;
     margin-bottom : 15px;
     box-shadow: 5px 5px 5px #ddd;
+    cursor : pointer;
 `
 
 export const Section= styled.div`
@@ -25,7 +26,7 @@ export const Section= styled.div`
 `
 
 export const ImageContainer = styled.div`
-    background-color : ${({ color }) => color == "black" ? "white" : "#ffe7df" };
+    background-color : ${({ color }) => color === "black" ? "white" : "#ffe7df" };
     height : 50px;
     width : 50px;
     border-radius : 7px;
@@ -40,8 +41,8 @@ export const Images = styled.div`
 `
 
 export const HeaderImg = styled.img`
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     border-radius : 50%;
     margin-left : -6px;
 `

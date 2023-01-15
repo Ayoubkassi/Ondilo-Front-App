@@ -1,6 +1,7 @@
 import { Wrapper , Title , Double , Date  } from "../meeting/meeting.styles";
 import { FiArrowRight } from 'react-icons/fi';
 import FilesItem from "../files-item/files-item.component";
+import data from '../../data.json';
 
 const Files = () => {
 
@@ -13,9 +14,12 @@ const Files = () => {
                         <FiArrowRight />
                 </Double>
             </Wrapper>
-            <FilesItem />
-            <FilesItem />
-            <FilesItem />
+            {
+                data.files.map((file , index) => (
+                    <FilesItem item = {file} key={index} />
+                ))
+            }
+            
         </>
     );
 }

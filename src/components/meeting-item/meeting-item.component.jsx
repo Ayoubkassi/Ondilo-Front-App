@@ -2,16 +2,19 @@
 import { Container , ImageContainer , Time } from "./meeting-item.styles";
 
 
-const MeetingItem = ({ backColor }) => {
+const MeetingItem = ({ item }) => {
     return(
-        <Container color={backColor}>
-            <ImageContainer color={backColor}>
-                <h4>Mon</h4>
-                <h3>3</h3>
+        <Container color={item.current}>
+            <ImageContainer color={item.current}>
+                <h4>{item.day}</h4>
+                <h3>{item.numDay}</h3>
             </ImageContainer >
-            <Time color={backColor}>9:00 AM</Time>
-            <Time color={backColor}>2:00 AM</Time>
-            <Time color={backColor}>4:00 AM</Time>
+            {
+                item.hours.map((hour) => (
+                    <Time color={item.current}>{hour}</Time>
+                ))
+            }
+           
         </Container>
     );
 }

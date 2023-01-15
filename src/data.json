@@ -1,0 +1,63 @@
+{
+    "tasks" : [
+        {
+            "name" : "Illustration Templates",
+            "date" : "9:00 AM - 4:00 PM",
+            "current" : "black"
+        },{
+            "name" : "UI Design",
+            "date" : "4:00 PM - 5:00 PM"
+        },{
+            "name" : "UX Design",
+            "date" : "5:00 PM - 6:00 PM"
+        }
+    ],
+
+    "navbar" : [
+        "Profile","Schedule","Overview","Chat","Settings"
+    ],
+
+    "files" : [
+        {
+            "name" : "User flow.fig",
+            "date" : "Aug 5, 2021 at 9:50 AM",
+            "size" : "0.6 KB",
+            "image" : "figma"
+        },{
+            "name" : "Design system.fig",
+            "date" : "Aug 5, 2021 at 9:20 AM",
+            "size" : "0.8 KB",
+            "image" : "figma"
+        },{
+            "name" : "Animation.json",
+            "date" : "Aug 5, 2021 at 9:05 AM",
+            "size" : "18 KB",
+            "image" : "json"
+        }
+    ],
+
+    "meetings" : [
+        {
+            "day" : "Mon",
+            "numDay" : "3",
+            "hours" : ["9:00 AM","2:00 PM","4:00 PM"]
+        },{
+            "day" : "Tue",
+            "numDay" : "4",
+            "hours" : ["10:30 AM","1:00 PM","___"]
+        },{
+            "day" : "Wed",
+            "numDay" : "5",
+            "hours" : ["9:00 AM","3:00 PM","6:00 PM"]
+        },{
+            "day" : "Thu",
+            "numDay" : "6",
+            "hours" : ["11:00 AM","___","3:50 PM"],
+            "current" : "black"
+        },{
+            "day" : "Fri",
+            "numDay" : "7",
+            "hours" : ["9:20 AM","1:15 PM","5:45 PM"]
+        }
+    ]
+}

@@ -2,6 +2,8 @@ import { GrCaretDown } from 'react-icons/gr';
 import { Title , Date , Double  , Wrapper , Container , MeetingContainer} from "./meeting.styles";
 import MeetingItem from '../meeting-item/meeting-item.component';
 import { useState } from 'react';
+import data from  '../../data.json';
+
 
 
 const Meeting = () => {
@@ -19,11 +21,12 @@ const Meeting = () => {
                 </Double>
             </Wrapper>
             <MeetingContainer>
-                <MeetingItem />
-                <MeetingItem />
-                <MeetingItem />
-                <MeetingItem backColor = {color} />
-                <MeetingItem />
+                {
+                    data.meetings.map((item , index) => (
+                        <MeetingItem item={item} key={index} />
+                    ))
+                }
+                
             </MeetingContainer>
         </Container>
     );

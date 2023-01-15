@@ -1,23 +1,35 @@
 import { Container , Section , ImageContainer , Column , Date , Title , Desc , Weight } from "./files-item.styles";
 import FigmaIcon from '../../assets/figma.png'
+import JsonIcon from '../../assets/json.png'
 import { HiFolderDownload } from 'react-icons/hi'
+import { useState , useEffect } from "react";
 
 
-const FilesItem = () => {
+const FilesItem = ({ item }) => {
+
+    const [image , setImage ] = useState(FigmaIcon);
+
+
+    useEffect(() => {
+        if( item.image === "json" )
+            setImage(JsonIcon)
+      }, []);
+    
+
     return (
         <Container>
             <Section>
                 <ImageContainer>
-                    <img src={FigmaIcon} width={26} height={26} />
+                    <img src={image} width={26} height={26} />
                 </ImageContainer>
                 <Column>
-                    <Title>User flow.fig</Title>
-                    <Date>Aug 5, 2021 at 9:50 AM</Date>
+                    <Title>{item.name}</Title>
+                    <Date>{item.date}</Date>
                 </Column>
             </Section>
 
             <Desc>
-                <Weight>0,6 KB</Weight>
+                <Weight>{item.size}</Weight>
                 <HiFolderDownload size={25} />
             </Desc>
 

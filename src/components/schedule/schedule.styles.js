@@ -11,11 +11,13 @@ export const Bar = styled.div`
 export const Link = styled.a`
     color : #dad9da;
     font-weight : 600;
+    cursor : pointer;
 `
 
 export const ClickedLink = styled.a`
     color : black;
     text-decoration : underline;
+    cursor : pointer;
 `
 export const Column = styled.div`
     display : flex;

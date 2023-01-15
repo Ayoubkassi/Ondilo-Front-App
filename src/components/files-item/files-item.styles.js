@@ -10,6 +10,7 @@ export const Container = styled.div`
     border-radius : 10px;
     margin-top : 20px;
     border : 2px solid black;
+    cursor : pointer;
 `
 
 export const Section= styled.div`

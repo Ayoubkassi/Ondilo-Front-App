@@ -7,11 +7,12 @@ export const Container = styled.div`
     align-items : center;
     padding : 10px 8px 16px 8px;
     border-radius: 12px;
-    border : ${({ color }) => color == "black" ? "2px solid black" : "none" };
+    border : ${({ color }) => color === "black" ? "2px solid black" : "none" };
+    cursor : pointer;
 `
 
 export const ImageContainer = styled.div`
-    background-color : ${({ color }) => color == "black" ? "transparent" : "#ffe7df" };
+    background-color : ${({ color }) => color === "black" ? "transparent" : "#ffe7df" };
     display : flex;
     flex-direction : column;
     justify-content: space-between;
@@ -23,5 +24,5 @@ export const ImageContainer = styled.div`
 `
 
 export const Time = styled.strong`
-    color : ${({ color }) => color == "black" ? "black" : "#aaa6a6" };
+    color : ${({ color }) => color === "black" ? "black" : "#aaa6a6" };
 `
